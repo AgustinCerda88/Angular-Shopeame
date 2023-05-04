@@ -1,0 +1,32 @@
+.div{
+    background-color: #333333;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    &__div{
+        width: 500px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    }
+
+    &__div2{
+        margin-top: 30px;
+        color:white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    }
+
+
+    &__div-h5-3{
+        display: flex;
+        flex-direction: row;
+    }
+}

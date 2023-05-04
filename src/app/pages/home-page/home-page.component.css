@@ -1,0 +1,27 @@
+.div {
+  height: 110vh;
+  align-self: center;
+  width: 80%;
+  margin: 5% auto;
+  border-width: 1px;
+  border-color: rgba(199, 199, 199, 0.686);
+  border-style: solid;
+}
+.div__div {
+  width: 90%;
+  margin: 0px auto;
+}
+.div .texto {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+  flex-direction: column;
+}
+.div__h1 {
+  width: 40%;
+  margin: 30px auto;
+  padding-top: 40px;
+}
+.div__span {
+  font-style: italic;
+}/*# sourceMappingURL=home-page.component.css.map */

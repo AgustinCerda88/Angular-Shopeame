@@ -1,0 +1,33 @@
+
+.div{
+    min-height:110vh;
+    align-self: center;
+    width: 80%;
+    margin: 5% auto;
+    border-width: 1px;
+    border-color: rgba(199, 199, 199, 0.686);
+    border-style: solid;
+
+    &__div{
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .texto{
+        display: flex;
+        margin-top: 50px;
+        gap: 30px;
+        flex-direction: column;
+    }
+    &__h1{
+        width: 40%;
+        margin: 30px auto;
+        padding-top: 40px;;
+
+    }
+
+    &__span{
+       font-style: italic;
+    }
+
+}

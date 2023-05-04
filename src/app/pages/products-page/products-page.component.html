@@ -1,0 +1,13 @@
+<div class="div">
+  <div class="header">
+    <h3>Listado de Productos({{numeroElementos}})</h3>
+    <div class="header__right">
+      <input class="buscador" type="text" [(ngModel)]="filter" placeholder="Buscardor" (input)="filtername()" />
+    </div>
+  </div>
+  <div class="div__div">
+    <div *ngFor="let prod of datos" class="elemento">
+      <app-products [product]="prod" estrellas="calcularEstrellas(prod)"></app-products>
+    </div>
+  </div>
+</div>

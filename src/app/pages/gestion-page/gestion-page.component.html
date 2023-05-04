@@ -1,0 +1,47 @@
+<div class="div__div">
+    <form class="div__div-form">
+        <div class="busca">
+            <div class="div__div-search">
+                <p>Busca el producto a modificar</p>
+                <input class="div__div-search-input" type="text" [(ngModel)]="nombre" placeholder="Nombre"
+                    name="nombre.toLowercase()" />
+                <button class="boton" (click)="findProduct()">Buscar</button>
+            </div>
+        </div>
+        <p>Nombre del producto:</p>
+        <input class="div__input" type="text" placeholder="Por ej: Tiesto para planta" [(ngModel)]="producto.name" name="nombre"
+            req>
+        <p>Precio:</p>
+        <input class="div__input" type="text" placeholder="Por ej: 9,50" [(ngModel)]="producto.price" name="precio">
+        <p>Descripción:</p>
+        <input class="div__input" type="text" placeholder="Por ej: Lo más vendido este mes" [(ngModel)]="producto.description"
+            name="descripcion">
+        <p>Ruta de la imagen:</p>
+        <input class="div__input" type="text" placeholder="Por ej: Http://blabla.com/img.jpg" [(ngModel)]="producto.image"
+            name="imagen">
+        <p>Opiniones:</p>
+        <input class="div__input" type="text" placeholder="Por ej: 4.28" [(ngModel)]="producto.stars" name="puntuacion">
+        <div class="botones">
+            <button class="button" type="submit" (click)="crearPoducto()">Crear</button>
+            <button class="button" type="submit" (click)="modificarPoducto()">Modificar</button>
+        </div>
+    </form>
+    <div class="line"></div>
+    <div class="card">
+        <div class="box">
+            <img class="img" src="{{producto.image}}">
+        </div>
+        <div class="idname">
+            <h4 class="name">{{producto.name}}</h4>
+            <p class="id">{{producto.id}}</p>
+        </div>
+        <h2 class="price">{{producto.price}}</h2>
+        <h4 class="description">{{producto.description}}</h4>
+        <div class="footer">
+            <div class="stars">
+                <div class="stars__s">{{stars}}&nbsp;&nbsp;</div>
+                <div>{{producto.stars}}</div>
+            </div>
+        </div>
+    </div>
+</div>

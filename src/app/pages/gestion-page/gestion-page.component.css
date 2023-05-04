@@ -1,0 +1,141 @@
+.div__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin: 5% auto;
+  align-self: center;
+  border-width: 1px;
+  border-color: rgba(199, 199, 199, 0.686);
+  border-style: solid;
+}
+
+.div__div-form {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.div__div-form__div-search {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.div__div-form__div-search .-input {
+  width: 20px;
+}
+
+.div__input {
+  border-radius: 3px;
+  width: 100%;
+  border-width: 1px;
+  height: 36px;
+}
+
+.boton {
+  width: 20%;
+  height: 20px;
+  justify-content: flex-end;
+  background-color: #f89f21;
+  border-radius: 4px;
+  border-width: 1px;
+  color: white;
+  margin-top: 10px;
+}
+
+.line {
+  width: 1px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-color: #f89f21;
+  height: 60vh;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.button {
+  width: 40%;
+  height: 32px;
+  justify-content: flex-end;
+  background-color: #f89f21;
+  border-radius: 4px;
+  border-width: 1px;
+  color: white;
+  margin-top: 10px;
+}
+
+.card {
+  height: 390px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-width: 1px;
+  border-color: rgba(199, 199, 199, 0.686);
+  border-style: solid;
+}
+.card .box {
+  width: 200px;
+  overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.card .img {
+  height: 100%;
+  margin: 0px auto;
+}
+.card .name {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 100;
+}
+.card .idname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .idname p {
+  font-size: 9px;
+}
+.card .img {
+  height: 100%;
+  margin: 0px auto;
+  max-width: 200px;
+}
+.card .description {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  color: rgba(128, 128, 128, 0.648);
+  margin: 0px 15px;
+}
+.card .footer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.card .stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .stars__s {
+  color: #fb8200;
+}/*# sourceMappingURL=gestion-page.component.css.map */

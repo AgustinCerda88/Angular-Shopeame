@@ -1,0 +1,78 @@
+.card {
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  gap: 20px;
+
+  .box {
+    width: 200px;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+  }
+
+  .idname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 9px;
+    }
+  }
+
+  .img {
+    height: 100%;
+    margin: 0px auto;
+    max-width: 200px;
+  }
+
+  .description {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    font-weight: 100;
+    color: rgba(128, 128, 128, 0.648);
+    margin: 0px 15px;
+  }
+
+  .footer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .button {
+    width: 70px;
+    height: 30px;
+    color: #2264d1;
+    border-color: #2264d1;
+    border-radius: 3px;
+    border-width: 1px;
+    background-color: white;
+  }
+
+  .stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__s {
+      color: #fb8200;
+    }
+  }
+}
