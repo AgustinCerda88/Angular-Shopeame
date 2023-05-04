@@ -13,24 +13,24 @@ export class ServiciosService {
 
    
   getProductos (){
-    return this.http.get("http://localhost:3000/products")
+    return this.http.get("https://back-shopeame.vercel.app/products")
   }
 
 
   postProductos(newProduct: Producto){
-    return this.http.post<Producto>("http://localhost:3000/products", newProduct)
+    return this.http.post<Producto>("https://back-shopeame.vercel.app/products", newProduct)
   }
 
   deleteProductos(id:number){
-    return this.http.delete<Producto>("http://localhost:3000/products/"+id).subscribe()
+    return this.http.delete<Producto>("https://back-shopeame.vercel.app/products/"+id).subscribe()
   }
 
   putProductos(id:any, modify: Producto){
-    return this.http.put(`http://localhost:3000/products/${id}`, modify)
+    return this.http.put(`https://back-shopeame.vercel.app/products/${id}`, modify)
   }
   
   getNameProductos(name: any) {
-    return this.http.get<Object[]>('http://localhost:3000/products/').pipe(
+    return this.http.get<Object[]>('https://back-shopeame.vercel.app/products/').pipe(
       map((producto: Object[])=>{
         return producto.find((p:any) => p.name === name)
       })
